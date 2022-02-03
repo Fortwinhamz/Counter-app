@@ -12,8 +12,10 @@ function increment() {
 
 function save(){
   
-  let countStr = count + " - "
-  saveEl.textContent += countStr
+  let countStr = ' - ' + count
+  if (saveEl) {
+    saveEl.textContent = "Number of couples who's entered :" + countStr
+  }
   countEl.textContent = 0
     count = 0
   
